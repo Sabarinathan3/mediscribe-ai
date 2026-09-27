@@ -1,0 +1,59 @@
+name: mediscribe_app
+description: Mobile application for MediScribe AI prescription scanning, OCR analysis, and dose reminder system.
+version: 1.0.0+1
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+
+  # State Management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+
+  # Networking
+  dio: ^5.4.0
+
+  # Routing
+  go_router: ^13.0.1
+
+  # Local Services & Accessibility
+  flutter_tts: ^4.2.0
+  flutter_local_notifications: ^17.0.0
+  image_picker: ^1.1.2
+  shared_preferences: ^2.3.2
+  path_provider: ^2.1.1
+  google_fonts: ^6.1.0
+
+  # Timezone support (required for scheduled notifications)
+  timezone: ^0.9.4
+
+  # Premium Animations
+  flutter_animate: ^4.5.0
+
+  # Shimmer skeleton loading
+  shimmer: ^3.0.0
+
+  # SVG support for empty state illustrations
+  flutter_svg: ^2.0.10
+  uuid: ^4.5.3
+  flutter_secure_storage: ^10.3.1
+  flutter_timezone: ^5.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.8
+  riverpod_generator: ^2.3.9
+  mocktail: ^1.0.5
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+
